@@ -12,7 +12,7 @@ model.resize_token_embeddings(len(tokenizer))
 model.config.pad_token_id = tokenizer.pad_token_id
 
 # Load dataset
-raw_dataset = load_dataset("json", data_files="short_alpaca.jsonl")
+raw_dataset = load_dataset("json", data_files="sample_dataset.jsonl")
 dataset = raw_dataset["train"]
 
 # Tokenise
